@@ -1,1 +1,4 @@
-
+$ dig example.com +nostats +nocomments +nocmd
+;example.com.
+example.com.   73  IN  A 192.30.252.153
+example.com.   73  IN  A 192.30.252.154
