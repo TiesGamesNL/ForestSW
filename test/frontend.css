@@ -6,7 +6,7 @@ body {
 			rgba(44, 62, 80,0.6),
 			rgba(44, 62, 80,0.6)
 		),
-		url('test/img/forest.jpg');
+		url('assets/img/forest.jpg');
 	background-size: 100%;
 	background-attachment: fixed;
 	font-family: 'Open Sans', sans-serif;
