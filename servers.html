@@ -1,66 +1,97 @@
-	<!DOCTYPE html>
-<html>
-<head>
-	<title>ForestSW - Welcome to our site</title>
-	<link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootswatch/3.3.4/yeti/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-	<style type="text/css">
-		body {
-			background-image: url('assets/img/forest.jpg');
-			background-size: 100% 100%;
-		}
-		.headLoc {
-			padding: 20px 0 20px 0;
-			text-align: center;
-		}
-		h1 {
-			font-size: 32px;
-		}
-		.small {
-			font-size: small;
-			margin: 0;
-		}
-	</style>
+
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+</style>
 </head>
 <body>
-<div class="container headLoc">
-	<img src="images/spectrum.png" alt="Replace with your logo!" height="150px" />
+
+<h2>Animated Modal with Header and Footer</h2>
+
+<!-- Trigger/Open The Modal -->
+<button id="myBtn">Open Modal</button>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">×</span>
+      <h2>Modal Header</h2>
+    </div>
+    <div class="modal-body">
+      <p>Some text in the Modal Body</p>
+      <p>Some other text...</p>
+    </div>
+    <div class="modal-footer">
+      <h3>Modal Footer</h3>
+    </div>
+  </div>
+
 </div>
-<div class="container">
-	<nav class="navbar navbar-default">
-		<div class="navbar-header">
-			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#toggle">
-				<span class="sr-only">Toggle navigation</span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			</button>
-			<a class="navbar-brand" href="#">ForestSW</a>
-		</div>
-		<div class="collapse navbar-collapse" id="toggle">
-			<ul class="nav navbar-nav">
-				<li class="active"><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
-				<li><a href="servers.html"><i class="fa fa-server"></i> Servers</a></li>
-				<li><a href="shop.html"><i class="fa fa-shopping-cart"></i> Shop</a></li>
-				<li><a href="#forums"><i class="fa fa-comments"></i> Forums</a></li>
-			</ul>
-		</div>
-	</nav>
-	<div class="col-md-3">
-			<div class="panel panel-success">
-				<div class="panel-heading">Server Status</div>
-				<div class="panel-body">
-					<p>Lobby: <span class="label label-success pull-right">Online</span></p>
-					<hr />
-					<p>SkyWars: <span class="label label-success pull-right">Online</span></p>
-					<hr />
-					<p>1vs1: <span class="label label-success pull-right">Online</span></p>
-					<hr />
-					<p>SurvivalGames: <span class="label label-danger pull-right">Offline</span></p>
-					<hr />
-					<p>MicroBattles: <span class="label label-danger pull-right">Offline</span></p>
-				</div>
-			</div>
-		</div>
-	</div>
-	<br />
+
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+</body>
+</html>
