@@ -1,97 +1,41 @@
-
-    from {top:-300px; opacity:0}
-    to {top:0; opacity:1}
-}
-
-@keyframes animatetop {
-    from {top:-300px; opacity:0}
-    to {top:0; opacity:1}
-}
-
-/* The Close Button */
-.close {
-    color: white;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.modal-header {
-    padding: 2px 16px;
-    background-color: #5cb85c;
-    color: white;
-}
-
-.modal-body {padding: 2px 16px;}
-
-.modal-footer {
-    padding: 2px 16px;
-    background-color: #5cb85c;
-    color: white;
-}
-</style>
-</head>
-<body>
-
-<h2>Animated Modal with Header and Footer</h2>
-
-<!-- Trigger/Open The Modal -->
-<button id="myBtn">Open Modal</button>
-
-<!-- The Modal -->
-<div id="myModal" class="modal">
-
-  <!-- Modal content -->
-  <div class="modal-content">
-    <div class="modal-header">
-      <span class="close">×</span>
-      <h2>Modal Header</h2>
-    </div>
-    <div class="modal-body">
-      <p>Some text in the Modal Body</p>
-      <p>Some other text...</p>
-    </div>
-    <div class="modal-footer">
-      <h3>Modal Footer</h3>
-    </div>
-  </div>
-
-</div>
-
-<script>
-// Get the modal
-var modal = document.getElementById('myModal');
-
-// Get the button that opens the modal
-var btn = document.getElementById("myBtn");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks the button, open the modal
-btn.onclick = function() {
-    modal.style.display = "block";
-}
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-    modal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
-</script>
-
-</body>
-</html>
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>Nifty Modal Window Effects</title>
+		<meta name="description" content="Nifty Modal Window Effects with CSS Transitions and Animations" />
+		<meta name="keywords" content="modal, window, overlay, modern, box, css transition, css animation, effect, 3d, perspective" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico"> 
+		<link rel="stylesheet" type="text/css" href="css/default.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<script src="js/modernizr.custom.js"></script>
+		<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-7243260-2']);
+		_gaq.push(['_trackPageview']);
+		(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+		</script>
+	</head>
+	<body>
+		<!-- All modals added here for the demo. You would of course just have one, dynamically created -->
+		<div class="md-modal md-effect-1" id="modal-1">
+			<div class="md-content">
+				<h3>Modal Dialog</h3>
+				<div>
+					<p>This is a modal window. You can do the following things with it:</p>
+					<ul>
+						<li><strong>Read:</strong> modal windows will probably tell you something important so don't forget to read what they say.</li>
+						<li><strong>Look:</strong> a modal window enjoys a certain kind of attention; just look at it and appreciate its presence.</li>
+						<li><strong>Close:</strong> click on the button below to close the modal.</li>
+					</ul>
+					<button class="md-close">Close me!</button>
+				</div>
+			</div>
+		</div>
