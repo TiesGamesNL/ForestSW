@@ -1,33 +1,28 @@
-# MyMC
-Free Bootstrap template for Minecraft servers.
+## MCHostPanel
+A lightweight Minecraft control panel for hosting companies
 
-[Click here for a demo] (http://rodymol123.github.io/MyMC/)
+MCHostPanel can manage an unlimited number of Minecraft control panels, including CraftBukkit, Tekkit, and any other custom build that uses a .jar file.
 
-##Pages
+### Requirements
 
-* Homepage
-* Rules
-* Staff
-* Vote
-* (+ link to your servershop)
+- PHP 5.3+ with GD library (GD only used for player faces)
+- GNU Screen (installed by default on many platforms)
+- Java 6/7 Headless (OpenJDK JRE works great)
 
-## Screenshots
-![Example](https://xtrada.nl/dist/img/mymc.png)
+### Installation
 
-## Bugs and Issues
+- Upload all of the files to a web-accessible directory on your server
+- Copy data/config-sample.php to data/config.php
+- Edit data/config.php and set `KT_LOCAL_IP` to your server's public IP address
+- Go to install.php in your browser and set up an administrator user
+- Add any Minecraft server .jar file to your home directory
+- Ensure the web server user has write access to the main MCHP and `data/` directories.
 
-Have a bug or an issue with this template? Open an issue or send us a message on [https://xtrada.nl/en/bug-report] (http://xtrada.nl/en/bug-report)
+### User setup
 
-## Creator
-
-MyMC is maintained by **Rody Molenaar** from [Xtrada Nederland] (https://xtrada.nl/en/).
-
-* https://twitter.com/rodymolenaar
-* https://github.com/rodymol123
-
-Follow [@XtradaNL] (https://twitter.com/XtradaNL) for more cool themes and templates!
-
-
-## Copyright and License
-
-Copyright 2015 Xtrada Nederland. Code released under the [Apache 2.0](http://www.apache.org/licenses/LICENSE-2.0) license.
+- Log in as an administrator user
+- Go to Administration
+- Use the "Add a New User" form to set up a new account, the home directory SHOULD NOT be web accessible
+- Add any Minecraft server .jar file to the user's directory
+- Ensure the web server user has write access to the directory
+- If desired, you can now start the user's server from the Administration page
