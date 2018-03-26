@@ -1,4 +1,4 @@
 $ dig example.com +nostats +nocomments +nocmd
 ;example.com.
-forestsw.ddns.net.   73  IN  A 192.30.252.153
-forestsw.ddns.net.   73  IN  A 192.30.252.154
+flameecraft.tk   73  IN  A 192.30.252.153
+flameecraft.tk.   73  IN  A 192.30.252.154
