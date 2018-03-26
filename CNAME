@@ -1,5 +1,6 @@
 $ dig example.com +nostats +nocomments +nocmd
 ;example.com.
-flameecraft.tk   73  IN  A 80.80.80.80
-flameecraft.tk.   73  IN  A 80.80.80.81
+
+endergamesnw.tk.   73  IN  A 80.80.80.80
+endergamesnw.tk.   73  IN  A 80.80.81.81
 
